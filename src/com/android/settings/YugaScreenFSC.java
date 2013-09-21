@@ -40,16 +40,16 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class PowersaveBiasPreference extends SeekBarDialogPreference implements
+public class YugaScreenFSC extends SeekBarDialogPreference implements
         SeekBar.OnSeekBarChangeListener {
     
     private SeekBar mSeekBar;
     private TextView mSliderValue;
-    private static final int SEEK_BAR_RANGE = 700;
-    private static final String config_file = "/data/misc/.pabx_settings_powersave_bias";
+    private static final int SEEK_BAR_RANGE = 31; /* kernel: 0-31 */
+    private static final String config_file = "/data/misc/.pabx_settings_fsc";
     private int mCurrentValue;
 
-    public PowersaveBiasPreference(Context context, AttributeSet attrs) {
+    public YugaScreenFSC(Context context, AttributeSet attrs) {
         super(context, attrs);
         setDialogLayoutResource(R.layout.preference_dialog_yuga_seekbar);
         setDialogIcon(R.drawable.ic_settings_yuga);
@@ -57,11 +57,8 @@ public class PowersaveBiasPreference extends SeekBarDialogPreference implements
 
     public void onProgressChanged(SeekBar seekBar, int progress,
             boolean fromTouch) {
-        String userText = "disabled";
         mCurrentValue = progress;
-        if(mCurrentValue > 0) {
-            userText = String.format("%.1f%%", mCurrentValue/10f);
-        }
+        String userText = "Raw value = "+mCurrentValue;
         mSliderValue.setText(userText);
     }
 
@@ -70,9 +67,10 @@ public class PowersaveBiasPreference extends SeekBarDialogPreference implements
         super.onBindDialogView(view);
 
         /* Set help text for this dialog (XML is shared) */
-        ((TextView)view.findViewById(R.id.helptxt)).setText(R.string.yuga_powersave_bias_help);
+        ((TextView)view.findViewById(R.id.helptxt)).setText(R.string.yuga_fsc_help);
 
         mSliderValue = (TextView) view.findViewById(R.id.slider_value);
+
         mSeekBar = getSeekBar(view);
         mSeekBar.setMax(SEEK_BAR_RANGE);
         mSeekBar.setProgress(getPrefValue());
@@ -103,21 +101,19 @@ public class PowersaveBiasPreference extends SeekBarDialogPreference implements
             writer.write(val+"\n");
             writer.close();
             /* Try to restart qc-fqd (this is pretty ugly) */
-            Runtime.getRuntime().exec("/system/bin/stop qcfqd");
-            Runtime.getRuntime().exec("/system/bin/start qcfqd");
+            Runtime.getRuntime().exec("/system/bin/start lcd_fsc");
         } catch(Exception e) {}
     }
 
     private int getPrefValue() {
-        int value = 0;
+        int value = 19; /* default from kernel */
         try {
             BufferedReader reader = new BufferedReader(new FileReader(config_file), 256);
             String line = reader.readLine();
             reader.close();
             value = Integer.parseInt(line);
         } catch(Exception e) {} /* file does not exist or is corrupted */
-        return value;
-    }
+        return value;    }
 
 }
 

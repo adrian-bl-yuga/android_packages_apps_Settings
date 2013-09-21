@@ -19,8 +19,14 @@
 
         <com.android.settings.PowersaveBiasPreference
                 android:key="pabx_powersave_bias"
+                android:persistent="false"
                 android:title="@string/yuga_powersave_bias_title"
                 android:dialogTitle="@string/yuga_powersave_bias_title" />
+        <com.android.settings.YugaScreenFSC
+                android:key="pabx_screen_fsc"
+                android:persistent="false"
+                android:title="@string/yuga_fsc_title"
+                android:dialogTitle="@string/yuga_fsc_title" />
         <CheckBoxPreference
             android:key="pabx_singlecore_mode"
             android:persistent="false"

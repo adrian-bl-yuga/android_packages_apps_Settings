@@ -39,7 +39,6 @@
                 android:layout_marginLeft="6dip"
                 android:layout_marginRight="6dip"
                 android:layout_marginTop="10dip"
-                android:text="@string/yuga_powersave_bias_help"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <SeekBar android:id="@*android:id/seekbar"
