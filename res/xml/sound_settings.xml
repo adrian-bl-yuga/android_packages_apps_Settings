@@ -82,6 +82,12 @@
             android:title="@string/haptic_feedback_enable_title"
             android:defaultValue="true" />
 
+    <CheckBoxPreference
+            android:key="pab_volbtn_music_controls"
+            android:title="Enable Volume Rocker"
+            android:summary="Use vol +/- to skip tracks if screen is off"
+            android:persistent="false" />
+
     <ListPreference
             android:key="emergency_tone"
             android:title="@string/emergency_tone_title"
