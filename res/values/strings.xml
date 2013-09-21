@@ -2380,6 +2380,12 @@
     <string name="location_access_summary">Let apps that have asked your permission use your location information</string>
     <!-- [CHAR LIMIT=45] Section heading for location sources -->
     <string name="location_sources_heading">Location sources</string>
+    
+    <!-- yuga prefs -->
+    <string name="yuga_settings">Xperia Z Settings</string>
+    <string name="yuga_powersave_bias_title">Powersave Bias</string>
+    <string name="yuga_singlecore_mode_title">Use only one CPU Core</string>
+    <string name="yuga_powersave_bias_help">Configures the powersave_bias value used by qc-fqd if the cpu work queue is almost empty. Large values will keep the CPU at lower frequencies, a value of 0 disables this feature.\n\nRecommended values are between 0% - 25%.</string>
 
     <!-- About --> <skip />
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
