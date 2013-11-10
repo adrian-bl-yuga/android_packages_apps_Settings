@@ -27,6 +27,11 @@
                 android:persistent="false"
                 android:title="@string/yuga_fsc_title"
                 android:dialogTitle="@string/yuga_fsc_title" />
+        <com.android.settings.YugaVibraLevel
+                android:key="pabx_vibra_level"
+                android:persistent="false"
+                android:title="@string/yuga_vibralevel_title"
+                android:dialogTitle="@string/yuga_vibralevel_title" />
         <CheckBoxPreference
             android:key="pabx_singlecore_mode"
             android:persistent="false"
