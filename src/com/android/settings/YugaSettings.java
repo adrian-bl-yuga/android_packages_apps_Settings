@@ -32,58 +32,16 @@ import java.io.File;
 public class YugaSettings extends SettingsPreferenceFragment {
 
     private static final String LOG_TAG = "YugaSettings";
-    private static final String PREF_SINGLECORE_MODE = "pabx_singlecore_mode";
-    private static final String scmode_config_file = "/data/misc/.pabx_singlecore_mode";
-
-    private CheckBoxPreference mSingleCoreMode;
 
     @Override
     public void onCreate(Bundle b) {
         super.onCreate(b);
         addPreferencesFromResource(R.xml.yuga_settings);
-
-        mSingleCoreMode = (CheckBoxPreference) findPreference(PREF_SINGLECORE_MODE);
-        mSingleCoreMode.setChecked(getSingleCoreMode());
     }
 
     @Override
     public void onResume() {
         super.onResume();
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if(preference == mSingleCoreMode) {
-            setSingleCoreMode(mSingleCoreMode.isChecked());
-            restartQcFqd();
-        }
-        return true;
-    }
-
-    /* Creates (or removes) the singlecore trigger config file */
-    private void setSingleCoreMode(Boolean on) {
-        try {
-            File confFile = new File(scmode_config_file);
-            if(on == true) {
-                confFile.createNewFile();
-            } else {
-                confFile.delete();
-            }
-        } catch(Exception e) {}
-    }
-
-    /* Returns true if singlecore mode is enabled */
-    private Boolean getSingleCoreMode() {
-        File confFile = new File(scmode_config_file);
-        return confFile.exists();
-    }
-
-    /* Tells Androids init to restart qc-fqd */
-    private void restartQcFqd() {
-        try {
-            Runtime.getRuntime().exec("/system/bin/stop qcfqd");
-            Runtime.getRuntime().exec("/system/bin/start qcfqd");
-        } catch(Exception e) {}
     }
 
 }

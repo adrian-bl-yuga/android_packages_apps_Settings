@@ -32,10 +32,10 @@
                 android:persistent="false"
                 android:title="@string/yuga_vibralevel_title"
                 android:dialogTitle="@string/yuga_vibralevel_title" />
-        <CheckBoxPreference
-            android:key="pabx_singlecore_mode"
+        <com.android.settings.YugaNumCores
+            android:key="pabx_num_cores"
             android:persistent="false"
-            android:title="@string/yuga_singlecore_mode_title"/>
+            android:title="@string/yuga_numcores_title"/>
 
 
 </PreferenceScreen>
