@@ -27,21 +27,33 @@ import android.preference.CheckBoxPreference;
 import android.util.Log;
 import android.widget.Toast;
 
-import java.io.File;
-
-public class YugaSettings extends SettingsPreferenceFragment {
+public class YugaSettings extends YugaSettingsPreferenceFragment {
 
     private static final String LOG_TAG = "YugaSettings";
+    private static final String PREF_DOUBLE_TAP_TO_WAKE = "pabx_settings_double_tap";
+    private static final String CF_DOUBLE_TAP_TO_WAKE = "/data/misc/."+PREF_DOUBLE_TAP_TO_WAKE;
+
+    private CheckBoxPreference mDoubleTapToWake;
 
     @Override
     public void onCreate(Bundle b) {
         super.onCreate(b);
         addPreferencesFromResource(R.xml.yuga_settings);
+        mDoubleTapToWake = (CheckBoxPreference) findPreference(PREF_DOUBLE_TAP_TO_WAKE);
+        mDoubleTapToWake.setChecked(getYugaBool(CF_DOUBLE_TAP_TO_WAKE));
     }
 
     @Override
     public void onResume() {
         super.onResume();
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if(preference == mDoubleTapToWake) {
+            setYugaBool(mDoubleTapToWake.isChecked(), CF_DOUBLE_TAP_TO_WAKE, PREF_DOUBLE_TAP_TO_WAKE);
+        }
+        return true;
     }
 
 }

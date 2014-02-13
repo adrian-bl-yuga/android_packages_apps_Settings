@@ -36,6 +36,10 @@
             android:key="pabx_num_cores"
             android:persistent="false"
             android:title="@string/yuga_numcores_title"/>
+        <CheckBoxPreference
+            android:key="pabx_settings_double_tap"
+            android:persistent="false"
+            android:title="@string/yuga_doubletap_title"/>
 
 
 </PreferenceScreen>

@@ -2469,6 +2469,7 @@
     <string name="yuga_numcores_title">CPU Cores</string>
     <string name="yuga_numcores_help1">Maximal amount of online cores</string>
     <string name="yuga_numcores_help2">Minimum amount of cores to keep online</string>
+    <string name="yuga_doubletap_title">Enable Double-Tap-To-Wake</string>
 
     <!-- About --> <skip />
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
