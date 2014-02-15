@@ -108,8 +108,7 @@ public class YugaNumCores extends SeekBarDialogPreference implements
            setPrefValue(CF_MIN, value_sb_min);
            // Now kick qcfqd to re-read its config
            try {
-               Runtime.getRuntime().exec("/system/bin/stop qcfqd");
-               Runtime.getRuntime().exec("/system/bin/start qcfqd");
+               Runtime.getRuntime().exec("/system/bin/start yuga_reconf");
            } catch(Exception e) {}
        }
     }

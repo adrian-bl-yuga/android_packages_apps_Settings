@@ -102,9 +102,7 @@ public class PowersaveBiasPreference extends SeekBarDialogPreference implements
             BufferedWriter writer = new BufferedWriter(new FileWriter(config_file));
             writer.write(val+"\n");
             writer.close();
-            /* Try to restart qc-fqd (this is pretty ugly) */
-            Runtime.getRuntime().exec("/system/bin/stop qcfqd");
-            Runtime.getRuntime().exec("/system/bin/start qcfqd");
+            Runtime.getRuntime().exec("/system/bin/start yuga_reconf");
         } catch(Exception e) {}
     }
 
