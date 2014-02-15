@@ -100,7 +100,7 @@ public class YugaVibraLevel extends SeekBarDialogPreference implements
             BufferedWriter writer = new BufferedWriter(new FileWriter(config_file));
             writer.write(val+"\n");
             writer.close();
-            Runtime.getRuntime().exec("/system/bin/start pabx_vib_level");
+            Runtime.getRuntime().exec("/system/bin/start yuga_reconf");
         } catch(Exception e) {}
     }
 

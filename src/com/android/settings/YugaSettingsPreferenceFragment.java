@@ -28,12 +28,12 @@ public class YugaSettingsPreferenceFragment extends SettingsPreferenceFragment {
 
 
 
-    public void setYugaBool(boolean enabled, String config_file, String service_name) {
+    public void setYugaBool(boolean enabled, String config_file) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(config_file));
             writer.write((enabled ? 1 : 0)+"\n");
             writer.close();
-            Runtime.getRuntime().exec("/system/bin/start "+service_name);
+            Runtime.getRuntime().exec("/system/bin/start yuga_reconf");
         } catch(Exception e) {}
     }
 

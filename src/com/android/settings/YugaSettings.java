@@ -51,7 +51,7 @@ public class YugaSettings extends YugaSettingsPreferenceFragment {
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if(preference == mDoubleTapToWake) {
-            setYugaBool(mDoubleTapToWake.isChecked(), CF_DOUBLE_TAP_TO_WAKE, "pabx_dbl_tap");
+            setYugaBool(mDoubleTapToWake.isChecked(), CF_DOUBLE_TAP_TO_WAKE);
         }
         return true;
     }

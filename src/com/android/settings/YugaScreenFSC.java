@@ -101,7 +101,7 @@ public class YugaScreenFSC extends SeekBarDialogPreference implements
             writer.write(val+"\n");
             writer.close();
             /* Try to restart qc-fqd (this is pretty ugly) */
-            Runtime.getRuntime().exec("/system/bin/start pabx_lcd_fsc");
+            Runtime.getRuntime().exec("/system/bin/start yuga_reconf");
         } catch(Exception e) {}
     }
 
