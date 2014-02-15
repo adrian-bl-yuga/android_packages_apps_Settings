@@ -26,26 +26,37 @@ import java.io.IOException;
 
 public class YugaSettingsPreferenceFragment extends SettingsPreferenceFragment {
 
-
-
     public void setYugaBool(boolean enabled, String config_file) {
+        setYugaString( (enabled ? "1" : "0"), config_file);
+    }
+
+    public boolean getYugaBool(String config_file) {
+        int value = 0;
+
+        try {
+            Integer.parseInt( getYugaString(config_file) );
+        } catch(Exception e) { }
+
+        return (value == 0 ? false : true);
+    }
+
+    public void setYugaString(String value, String config_file) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(config_file));
-            writer.write((enabled ? 1 : 0)+"\n");
+            writer.write(value+"\n");
             writer.close();
             Runtime.getRuntime().exec("/system/bin/start yuga_reconf");
         } catch(Exception e) {}
     }
 
-    public boolean getYugaBool(String config_file) {
-        int value = 0; /* default from kernel */
+    public String getYugaString(String config_file) {
+        String line = "";
         try {
             BufferedReader reader = new BufferedReader(new FileReader(config_file), 256);
-            String line = reader.readLine();
+            line = reader.readLine();
             reader.close();
-            value = Integer.parseInt(line);
         } catch(Exception e) {} /* file does not exist or is corrupted */
-        return (value == 0 ? false : true);
+        return line;
    }
 
 

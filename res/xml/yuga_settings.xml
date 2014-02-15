@@ -36,6 +36,13 @@
             android:key="pabx_num_cores"
             android:persistent="false"
             android:title="@string/yuga_numcores_title"/>
+        <ListPreference
+            android:key="pabx_settings_governor"
+            android:title="@string/yuga_governor_title"
+            android:persistent="false"
+            android:entries="@array/yuga_governor_entries"
+            android:entryValues="@array/yuga_governor_values"
+            />
         <CheckBoxPreference
             android:key="pabx_settings_double_tap"
             android:persistent="false"

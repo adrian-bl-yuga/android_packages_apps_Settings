@@ -1163,4 +1163,14 @@
         <item>critical</item>
     </string-array>
 
+    <string-array name="yuga_governor_entries" translatable="false">
+        <item>On demand</item>
+        <item>Interactive</item>
+    </string-array>
+
+    <string-array name="yuga_governor_values" translatable="false">
+        <item>ondemand</item>
+        <item>interactive</item>
+    </string-array>
+
 </resources>
