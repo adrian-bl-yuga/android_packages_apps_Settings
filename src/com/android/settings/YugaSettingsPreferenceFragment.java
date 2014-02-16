@@ -34,7 +34,7 @@ public class YugaSettingsPreferenceFragment extends SettingsPreferenceFragment {
         int value = 0;
 
         try {
-            Integer.parseInt( getYugaString(config_file) );
+            value = Integer.parseInt( getYugaString(config_file) );
         } catch(Exception e) { }
 
         return (value == 0 ? false : true);
