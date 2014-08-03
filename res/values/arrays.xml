@@ -1165,11 +1165,13 @@
 
     <string-array name="yuga_governor_entries" translatable="false">
         <item>On demand</item>
+        <item>On demand conservative</item>
         <item>Interactive</item>
     </string-array>
 
     <string-array name="yuga_governor_values" translatable="false">
         <item>ondemand</item>
+        <item>ondemand_conservative</item>
         <item>interactive</item>
     </string-array>
 
