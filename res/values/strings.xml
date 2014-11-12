@@ -5979,4 +5979,18 @@
    <!-- Message for encryption dialog telling the user that Talkback and other accessibility services will be disabled. -->
    <string name="encrypt_talkback_dialog_message_password">When you enter your password to start this device, accessibility services like <xliff:g id="service" example="TalkBack">%1$s</xliff:g> won\'t yet be available.</string>
 
+    <!-- yuga prefs -->
+    <string name="yuga_settings">Xperia Z Settings</string>
+    <string name="yuga_powersave_bias_title">Powersave bias</string>
+    <string name="yuga_powersave_bias_help">Configures the powersave_bias value used by qc-fqd if the cpu work queue is almost empty. Large values will keep the CPU at lower frequencies, a value of 0 disables this feature.\n\nRecommended values are between 0% - 25%.</string>
+    <string name="yuga_fsc_title">Display brightness scale</string>
+    <string name="yuga_fsc_help">Changes the \'Full Scale\' (fsc) value used by the kernel to calculate the display brightness.\n(Default value: 19)</string>
+    <string name="yuga_vibralevel_title">Vibrator power</string>
+    <string name="yuga_vibralevel_help">Changes the power used by the vibration motor. Lower values can save power.\n(Default value: 2900)</string>
+    <string name="yuga_numcores_title">CPU Cores</string>
+    <string name="yuga_numcores_help1">Maximal amount of online cores</string>
+    <string name="yuga_numcores_help2">Minimum amount of cores to keep online</string>
+    <string name="yuga_governor_title">CPU Governor</string>
+    <string name="yuga_doubletap_title">Enable Double-Tap-To-Wake</string>
+
 </resources>
