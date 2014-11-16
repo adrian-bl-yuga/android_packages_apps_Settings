@@ -47,6 +47,10 @@
             android:key="pabx_settings_double_tap"
             android:persistent="false"
             android:title="@string/yuga_doubletap_title"/>
-
+        <SwitchPreference
+            android:key="pabx_volume_rocker"
+            android:title="Enable Volume Rocker"
+            android:summary="Use vol +/- to skip tracks if screen is off"
+            android:persistent="false" />
 
 </PreferenceScreen>

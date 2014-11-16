@@ -25,6 +25,7 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.preference.ListPreference;
+import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class YugaSettings extends YugaSettingsPreferenceFragment
     private static final String CF_CPU_GOVERNOR = "/data/.pabx/"+PREF_CPU_GOVERNOR;
 
     private SwitchPreference mDoubleTapToWake;
+    private SwitchPreference mVolumeRocker;
     private ListPreference mCpuGovernor;
 
     @Override
@@ -47,6 +49,13 @@ public class YugaSettings extends YugaSettingsPreferenceFragment
         addPreferencesFromResource(R.xml.yuga_settings);
         mDoubleTapToWake = (SwitchPreference) findPreference(PREF_DOUBLE_TAP_TO_WAKE);
         mDoubleTapToWake.setChecked(getYugaBool(CF_DOUBLE_TAP_TO_WAKE));
+
+        mVolumeRocker = (SwitchPreference) findPreference(Settings.System.PABX_VOLUME_ROCKER);
+        mVolumeRocker.setPersistent(false); // we handle saving on our own
+        boolean bVolumeRockerState = 
+                (Settings.System.getInt(getContentResolver(), Settings.System.PABX_VOLUME_ROCKER, Settings.System.PABX_VOLUME_ROCKER_DEFAULT) 
+                    != Settings.System.PABX_VOLUME_ROCKER_DEFAULT);
+        mVolumeRocker.setChecked(bVolumeRockerState);
 
         mCpuGovernor = (ListPreference) findPreference(PREF_CPU_GOVERNOR);
         mCpuGovernor.setOnPreferenceChangeListener(this);
@@ -62,6 +71,10 @@ public class YugaSettings extends YugaSettingsPreferenceFragment
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if(preference == mDoubleTapToWake) {
             setYugaBool(mDoubleTapToWake.isChecked(), CF_DOUBLE_TAP_TO_WAKE);
+        }
+        if(preference == mVolumeRocker) {
+            Settings.System.putInt(getContentResolver(), Settings.System.PABX_VOLUME_ROCKER,
+                    mVolumeRocker.isChecked() ? 1 : 0);
         }
         return true;
     }
