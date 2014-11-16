@@ -43,7 +43,7 @@
             android:entries="@array/yuga_governor_entries"
             android:entryValues="@array/yuga_governor_values"
             />
-        <CheckBoxPreference
+        <SwitchPreference
             android:key="pabx_settings_double_tap"
             android:persistent="false"
             android:title="@string/yuga_doubletap_title"/>
