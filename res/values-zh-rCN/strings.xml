@@ -2482,4 +2482,21 @@
     <string name="encrypt_talkback_dialog_message_pin" msgid="1890374082842868489">"当您输入 PIN 码以启动此设备时，<xliff:g id="SERVICE">%1$s</xliff:g>等辅助功能服务还未开启。"</string>
     <string name="encrypt_talkback_dialog_message_pattern" msgid="4474332516537386384">"当您绘制解锁图案以启动此设备时，<xliff:g id="SERVICE">%1$s</xliff:g>等辅助功能服务还未开启。"</string>
     <string name="encrypt_talkback_dialog_message_password" msgid="8166099418487083927">"当您输入密码以启动此设备时，<xliff:g id="SERVICE">%1$s</xliff:g>等辅助功能服务还未开启。"</string>
+	
+	<!-- yuga prefs -->
+    <string name="yuga_settings">Xperia Z 设置</string>
+    <string name="yuga_powersave_bias_title">节电方向值</string>
+    <string name="yuga_powersave_bias_help">如果 CPU 工作队列几乎是空的时候调节 qc-fqd 使用的 powersave_bias 值。 较高的值将会保持 CPU 工作在较低的频率，值为0时关闭该功能。\n\n建议的值为 0% - 25% 之间.</string>
+    <string name="yuga_fsc_title">屏幕亮度范围</string>
+    <string name="yuga_fsc_help">改变内核使用的 \'Full Scale\' (fsc) 值来计算屏幕亮度。\n(默认值: 19)</string>
+    <string name="yuga_vibralevel_title">震动强度</string>
+    <string name="yuga_vibralevel_help">改变震动马达的功率。\n设置较低的值可以省电。\n(默认值: 2900)</string>
+    <string name="yuga_numcores_title">CPU 核心</string>
+    <string name="yuga_numcores_help1">最大激活核心数</string>
+    <string name="yuga_numcores_help2">最小保持激活的核心数</string>
+    <string name="yuga_governor_title">CPU 调速器</string>
+    <string name="yuga_doubletap_title">启用双击唤醒</string>
+	<string name="yuga_volume_rocker_title">启用音量键选曲</string>
+	<string name="yuga_volume_rocker_summary">屏幕关闭时使用音量键 +/- 快速选曲</string>
+
 </resources>

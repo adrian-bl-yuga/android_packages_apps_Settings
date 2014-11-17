@@ -41,16 +41,15 @@
             android:title="@string/yuga_governor_title"
             android:persistent="false"
             android:entries="@array/yuga_governor_entries"
-            android:entryValues="@array/yuga_governor_values"
-            />
+            android:entryValues="@array/yuga_governor_values"/>
         <SwitchPreference
             android:key="pabx_settings_double_tap"
             android:persistent="false"
             android:title="@string/yuga_doubletap_title"/>
         <SwitchPreference
             android:key="pabx_volume_rocker"
-            android:title="Enable Volume Rocker"
-            android:summary="Use vol +/- to skip tracks if screen is off"
+            android:title="@string/yuga_volume_rocker_title"
+            android:summary="@string/yuga_volume_rocker_summary"
             android:persistent="false" />
 
 </PreferenceScreen>
