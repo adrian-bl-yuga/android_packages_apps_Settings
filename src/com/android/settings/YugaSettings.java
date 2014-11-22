@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -71,6 +72,9 @@ public class YugaSettings extends YugaSettingsPreferenceFragment
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if(preference == mDoubleTapToWake) {
             setYugaBool(mDoubleTapToWake.isChecked(), CF_DOUBLE_TAP_TO_WAKE);
+            if(mDoubleTapToWake.isChecked()) {
+                displayD2wWarning();
+            }
         }
         if(preference == mVolumeRocker) {
             Settings.System.putInt(getContentResolver(), Settings.System.PABX_VOLUME_ROCKER,
@@ -85,6 +89,15 @@ public class YugaSettings extends YugaSettingsPreferenceFragment
             setYugaString((String) newValue, CF_CPU_GOVERNOR);
         }
         return true;
+    }
+
+    private void displayD2wWarning() {
+        AlertDialog mWarningDialog = new AlertDialog.Builder(getActivity())
+                .setTitle(R.string.yuga_doubletap_warning_title)
+                .setMessage(R.string.yuga_doubletap_warning_text)
+                .setPositiveButton(R.string.dlg_ok, null)
+                .create();
+        mWarningDialog.show();
     }
 
 }
