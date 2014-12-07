@@ -2486,7 +2486,7 @@
     <!-- yuga prefs -->
     <string name="yuga_settings">Apparaatinstellingen</string>
     <string name="yuga_powersave_bias_title">Energiebesparingen</string>
-    <string name="yuga_powersave_bias_help">Stel de \'powersave_bias\' waarde in voor qc-fqd als de CPU werkrij bijna leeg is. Een hoge waarde houdt de CPU op een lagere frequentie. Een 0 waarde schakelt deze functie uit.\n\nAangeraden waarde is tussen de 0% en 25%.</string>
+    <string name="yuga_powersave_bias_help">Stel de \'powersave_bias\' waarde in voor qc-fqd als de CPU werkrij bijna leeg is. Een hoge waarde houdt de CPU op een lagere frequentie. Een 0 waarde schakelt deze functie uit.\n\nAangeraden waarde is tussen de 0% en 25%</string>
     <string name="yuga_fsc_title">Helderheidsschaal</string>
     <string name="yuga_fsc_help">Stel de helderheidsschaal in (fsc) die gebruikt wordt voor de helderheid van het display.\n\nStandaard waarde is 19.</string>
     <string name="yuga_vibralevel_title">Trilmotorkracht</string>

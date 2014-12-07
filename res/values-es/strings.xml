@@ -2497,7 +2497,7 @@
     <string name="yuga_governor_title">Algoritmo CPU</string>
     <string name="yuga_doubletap_title">Habilitar Double-Tap-To-Wake</string>
     <string name="yuga_volume_rocker_title">Habilitar Botones Volumen</string>
-    <string name="yuga_volume_rocker_summary">Usar vol +/- para saltar canciones si la pantalla está apagada>
+    <string name="yuga_volume_rocker_summary">Usar vol +/- para saltar canciones si la pantalla está apagada</string>
     <string name="yuga_doubletap_warning_title">Advertencia</string>
     <string name="yuga_doubletap_warning_text">Habilitar esta función puede exponer fallos del firmware del panel táctil: Tu teléfono puede dejar de responder a eventos táctiles después de despertarse - esto es culpa del panel de la pantalla y no un fallo en el ROM!\nEn la mayoria de los casos puedes recuperar el control del teléfono apagando/encendiendo la pantalla un par de veces. En el peor de los casos, será necesario un reinicio forzado (mantén pulsado POWER+VOLUME_UP)</string>
 
