@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -5991,16 +5991,10 @@
     <string name="yuga_numcores_help1">Maximal amount of online cores</string>
     <string name="yuga_numcores_help2">Minimum amount of cores to keep online</string>
     <string name="yuga_governor_title">CPU Governor</string>
-<<<<<<< HEAD
-	<string name="yuga_doubletap_title">Enable Double-Tap-To-Wake</string>
-    <string name="yuga_volume_rocker_title">Enable Volume Rocker</string>
-	<string name="yuga_volume_rocker_summary">Use vol +/- to skip tracks if screen is off</string>
-=======
     <string name="yuga_doubletap_title">Enable Double-Tap-To-Wake</string>
     <string name="yuga_volume_rocker_title">Enable Volume Rocker</string>
     <string name="yuga_volume_rocker_summary">Use the volume buttons to skip tracks if the screen is off.</string>
     <string name="yuga_doubletap_warning_title">Warning!</string>
     <string name="yuga_doubletap_warning_text">Enabling this feature may expose bugs in the touch panel firmware: Your phone may stop responding to touch events after waking up - this is the fault of the display panel and not a bug in the ROM!\nYou can often recover from a stuck panel by turning the display off/on a couple of times. In the worst case, a hard reboot may be needed (press and hold POWER+VOLUME_UP)</string>
->>>>>>> 638f484ea9cc49ee9a4aa6fc60ff0f0a4fd1568b
 
 </resources>
