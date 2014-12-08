@@ -2482,4 +2482,23 @@
     <string name="encrypt_talkback_dialog_message_pin" msgid="1890374082842868489">"Cuando ingreses el PIN para iniciar el dispositivo, los servicios de accesibilidad, como <xliff:g id="SERVICE">%1$s</xliff:g>, aún no estarán disponibles."</string>
     <string name="encrypt_talkback_dialog_message_pattern" msgid="4474332516537386384">"Cuando ingreses el patrón para iniciar el dispositivo, los servicios de accesibilidad, como <xliff:g id="SERVICE">%1$s</xliff:g>, aún no estarán disponibles."</string>
     <string name="encrypt_talkback_dialog_message_password" msgid="8166099418487083927">"Cuando ingreses la contraseña para iniciar el dispositivo, los servicios de accesibilidad, como <xliff:g id="SERVICE">%1$s</xliff:g>, aún no estarán disponibles."</string>
+
+    <!-- yuga prefs -->
+    <string name="yuga_settings">Preferencias Xperia Z</string>
+    <string name="yuga_powersave_bias_title">Ahorro de Energía</string>
+    <string name="yuga_powersave_bias_help">Configura el parámetro powersave_bias usado por qc-fqd si la cola de trabajo del CPU está casi vacía. Valores grandes mantendrán el CPU a frecuencias bajas, el valor 0 desactiva esta función.\n\nLos valores recomendados son entre 0% - 25%.</string>
+    <string name="yuga_fsc_title">Escala de brillo</string>
+    <string name="yuga_fsc_help">Cambia el valor \'Full Scale\' (fsc) usado por el kernel para calcular el brillo de la pantalla.\n(Valor por defecto: 19)</string>
+    <string name="yuga_vibralevel_title">Potencia Vibración</string>
+    <string name="yuga_vibralevel_help">Cambia la potencia usada por el motor de vibración. Valores bajos pueden ahorrar batería.\n(Valor por defecto: 2900)</string>
+    <string name="yuga_numcores_title">Núcleos CPU</string>
+    <string name="yuga_numcores_help1">Número maximo de nucleos habilitados</string>
+    <string name="yuga_numcores_help2">Número mínimo de nucleos habilitados</string>
+    <string name="yuga_governor_title">Algoritmo CPU</string>
+    <string name="yuga_doubletap_title">Habilitar Double-Tap-To-Wake</string>
+    <string name="yuga_volume_rocker_title">Habilitar Botones Volumen</string>
+    <string name="yuga_volume_rocker_summary">Usar vol +/- para saltar canciones si la pantalla está apagada</string>
+    <string name="yuga_doubletap_warning_title">Advertencia</string>
+    <string name="yuga_doubletap_warning_text">Habilitar esta función puede exponer fallos del firmware del panel táctil: Tu teléfono puede dejar de responder a eventos táctiles después de despertarse - esto es culpa del panel de la pantalla y no un fallo en el ROM!\nEn la mayoria de los casos puedes recuperar el control del teléfono apagando/encendiendo la pantalla un par de veces. En el peor de los casos, será necesario un reinicio forzado (mantén pulsado POWER+VOLUME_UP)</string>
+
 </resources>

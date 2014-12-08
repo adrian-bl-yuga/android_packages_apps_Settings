@@ -2482,4 +2482,22 @@
     <string name="encrypt_talkback_dialog_message_pin" msgid="1890374082842868489">"Wanneer u uw pincode opgeeft om dit apparaat te starten, zijn toegankelijkheidsservices zoals <xliff:g id="SERVICE">%1$s</xliff:g> nog niet beschikbaar."</string>
     <string name="encrypt_talkback_dialog_message_pattern" msgid="4474332516537386384">"Wanneer u uw patroon opgeeft om dit apparaat te starten, zijn toegankelijkheidsservices zoals <xliff:g id="SERVICE">%1$s</xliff:g> nog niet beschikbaar."</string>
     <string name="encrypt_talkback_dialog_message_password" msgid="8166099418487083927">"Wanneer u uw wachtwoord opgeeft om dit apparaat te starten, zijn toegankelijkheidsservices zoals <xliff:g id="SERVICE">%1$s</xliff:g> nog niet beschikbaar."</string>
+    
+    <!-- yuga prefs -->
+    <string name="yuga_settings">Apparaatinstellingen</string>
+    <string name="yuga_powersave_bias_title">Energiebesparingen</string>
+    <string name="yuga_powersave_bias_help">Stel de \'powersave_bias\' waarde in voor qc-fqd als de CPU werkrij bijna leeg is. Een hoge waarde houdt de CPU op een lagere frequentie. Een 0 waarde schakelt deze functie uit.\n\nAangeraden waarde is tussen de 0% en 25%</string>
+    <string name="yuga_fsc_title">Helderheidsschaal</string>
+    <string name="yuga_fsc_help">Stel de helderheidsschaal in (fsc) die gebruikt wordt voor de helderheid van het display.\n\nStandaard waarde is 19.</string>
+    <string name="yuga_vibralevel_title">Trilmotorkracht</string>
+    <string name="yuga_vibralevel_help">Stel de kracht van de trilmotor in. Lagere waarden kunnen energie besparen.\n\nStandaard waarde is 2900.</string>
+    <string name="yuga_numcores_title">Aantal CPU kernen</string>
+    <string name="yuga_numcores_help1">Maximum aantal CPU kernen.</string>
+    <string name="yuga_numcores_help2">Minimum aantal CPU kernen.</string>
+    <string name="yuga_governor_title">CPU Governor</string>
+    <string name="yuga_doubletap_title">Dubbel tikken om in te schakelen activeren.</string>
+    <string name="yuga_volume_rocker_title">Activeer de volumeknoppen.</string>
+    <string name="yuga_volume_rocker_summary">Gebruik de volumeknoppen om tussen nummers te schakelen.</string>
+    <string name="yuga_doubletap_warning_title">Waarschuwing!</string>
+    <string name="yuga_doubletap_warning_text">Het inschakelen van deze functie kan er voor zorgen dat het touchscreen niet altijd correct werkt bij het inschakelen. Dit is een bug in de touchscreen firmware.\nHet probleem kan verholpen worden door de telefoon een aantal keer aan en uit te zetten of een reset te doen met POWER + VOLUME OMHOOG.</string>
 </resources>
