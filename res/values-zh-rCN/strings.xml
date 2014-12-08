@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--  Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -2484,19 +2484,21 @@
     <string name="encrypt_talkback_dialog_message_password" msgid="8166099418487083927">"当您输入密码以启动此设备时，<xliff:g id="SERVICE">%1$s</xliff:g>等辅助功能服务还未开启。"</string>
 	
 	<!-- yuga prefs -->
-    <string name="yuga_settings">Xperia Z 设置</string>
+    <string name="yuga_settings">设备设置</string>
     <string name="yuga_powersave_bias_title">节电方向值</string>
-    <string name="yuga_powersave_bias_help">如果 CPU 工作队列几乎是空的时候调节 qc-fqd 使用的 powersave_bias 值。 较高的值将会保持 CPU 工作在较低的频率，值为0时关闭该功能。\n\n建议的值为 0% - 25% 之间.</string>
+    <string name="yuga_powersave_bias_help">在 CPU 工作队列几乎为空的时候调节 qc-fqd 使用的 \'powersave_bias\' 值。 较高的值将会保持 CPU 工作在较低的频率，设为0时关闭该功能。\n\n建议的值为 0% - 25%</string>
     <string name="yuga_fsc_title">屏幕亮度范围</string>
-    <string name="yuga_fsc_help">改变内核使用的 \'Full Scale\' (fsc) 值来计算屏幕亮度。\n(默认值: 19)</string>
+    <string name="yuga_fsc_help">改变内核用来计算屏幕亮度的 \'Full Scale\' (fsc) 值。\n\n默认值为 19</string>
     <string name="yuga_vibralevel_title">震动强度</string>
-    <string name="yuga_vibralevel_help">改变震动马达的功率。\n设置较低的值可以省电。\n(默认值: 2900)</string>
+    <string name="yuga_vibralevel_help">调节震动马达的功率。\n设置较低的值可以省电。\n\n默认值为 2900</string>
     <string name="yuga_numcores_title">CPU 核心</string>
     <string name="yuga_numcores_help1">最大激活核心数</string>
     <string name="yuga_numcores_help2">最小保持激活的核心数</string>
     <string name="yuga_governor_title">CPU 调速器</string>
     <string name="yuga_doubletap_title">启用双击唤醒</string>
-	<string name="yuga_volume_rocker_title">启用音量键选曲</string>
-	<string name="yuga_volume_rocker_summary">屏幕关闭时使用音量键 +/- 快速选曲</string>
+    <string name="yuga_volume_rocker_title">启用音量键选曲</string>
+    <string name="yuga_volume_rocker_summary">屏幕关闭时使用音量键快速跳过曲目</string>
+    <string name="yuga_doubletap_warning_title">警告！</string>
+    <string name="yuga_doubletap_warning_text">启用此功能可能导致触摸面板中的缺陷暴露：您的手机在唤醒后可能会停止对触摸事件的响应 - 这是触摸面板的问题而不是这个ROM中的Bug！\n通常您可以通过关闭/打开屏幕几次来解决触摸失效。在最坏的情况下可能需要强制重启（按住电源键和音量+键）。</string>
 
 </resources>
