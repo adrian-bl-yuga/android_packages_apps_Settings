@@ -2484,4 +2484,24 @@
     <string name="encrypt_talkback_dialog_message_pin" msgid="1890374082842868489">"මෙම උපාංගය ආරම්භ කිරීමට ඔබගේ PIN එක ඔබ ඇතුළු කරන විට, ප්‍රවේශතා සේවාව වැනි <xliff:g id="SERVICE">%1$s</xliff:g> තවම තිබිය නොහැක."</string>
     <string name="encrypt_talkback_dialog_message_pattern" msgid="4474332516537386384">"මෙම උපාංගය ආරම්භ කිරීමට ඔබගේ රටාව ඔබ ඇතුළු කරන විට, ප්‍රවේශතා සේවාව වැනි <xliff:g id="SERVICE">%1$s</xliff:g> තවම තිබිය නොහැක."</string>
     <string name="encrypt_talkback_dialog_message_password" msgid="8166099418487083927">"මෙම උපාංගය ආරම්භ කිරීමට ඔබගේ මුරපදය ඔබ ඇතුළු කරන විට, ප්‍රවේශතා සේවාව වැනි <xliff:g id="SERVICE">%1$s</xliff:g> තවම තිබිය නොහැක."</string>
+
+ <!-- yuga prefs -->
+    <string name="yuga_settings">Xperia Z සැකසුම්</string>
+    <string name="yuga_powersave_bias_title">බල සුරැකුම් නැඹුර</string>
+    <string name="yuga_powersave_bias_help">සකසනයේ කාර්යයන් පෙළ හිස්නම් qc-fqd යොදා ගන්නා බල සුරැකුම් නැඹුරැ අගය හැඩගස්වයි. විශාල අගයන් සකසනය අවම නිසැදියක්ව තබා ගනියි, 0 අගය මෙම විශේෂාංගය ක්‍රියාවිරහිත කරයි.\n\n0% - 25% අතර අගයන් වඩාත් සුදුසුයි.</string>
+    <string name="yuga_fsc_title">දර්ශනයේ දීප්ත පරිමාණය</string>
+    <string name="yuga_fsc_help">කර්නලය මඟින් දර්ශකයේ දීප්තිය ගණනයට යොදා ගන්නා 'Full Scale' (fsc) අගයන් වෙනස් කරයි.\n(නිර්දේශිත අගය: 19)</string>
+    <string name="yuga_vibralevel_title">කම්පන බලය</string>
+    <string name="yuga_vibralevel_help">කම්පන මෝටරය ලබා ගන්නා බලය වෙනස් කරයි. අවම අගයන් බලය සුරකියි.\n(නිර්දේශිත අගය: 2900)</string>
+    <string name="yuga_numcores_title">මධ්‍යම සකසනයේ Cores</string>
+    <string name="yuga_numcores_help1">උපරිම මාර්ගගත cores</string>
+    <string name="yuga_numcores_help2">අවම මාර්ගගත cores</string>
+    <string name="yuga_governor_title">සකසනයේ පාලකය</string>
+    <string name="yuga_doubletap_title">Double-Tap-To-Wake යොදවන්න</string>
+    <string name="yuga_volume_rocker_title">Volume Rocker යොදවන්න</string>
+    <string name="yuga_volume_rocker_summary">ශබ්දය +/- කරන යතුරු වලින් ගීත මගහරින්න</string>
+    <string name="yuga_doubletap_warning_title">අවවාදයයි</string>
+    <string name="yuga_doubletap_warning_text">මෙම විශේෂාංගය සක්‍රීය කිරීමෙන් ස්පර්ෂක තිරයේ ස්ථීරංගයේ දෝෂ ඇති විය හැකියි: නැවත තිරය විවෘත කරන විට තිරය ක්‍රියාකාරී නොවේනම් එය ස්පර්ශක තිරයේ මිස මෙම ROM එකේ දෝෂයක් නොවේ!/n සමහර විට තිරයේ ක්‍රියාකාරීත්වය ආපසු ගෙන ඒමට කිහිප සැරයක් තිරය ක්‍රියාත්මක කර/ක්‍රියා විරහිත කර බලන්න. එසේත් නොහැකිනම් පද්ධතිය නැවත ක්‍රියාත්මක කරගත යුතු වේ.(press and hold POWER+VOLUME_UP)</string>
+
 </resources>
+
