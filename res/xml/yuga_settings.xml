@@ -42,6 +42,11 @@
             android:persistent="false"
             android:entries="@array/yuga_governor_entries"
             android:entryValues="@array/yuga_governor_values"/>
+        <com.android.settings.YugaResetMdm9k
+            android:key="pabx_settings_reset_mdm9k"
+            android:title="@string/yuga_reset_mdm9k_title"
+            android:dialogTitle="@string/yuga_reset_mdm9k_title"
+        />
         <SwitchPreference
             android:key="pabx_settings_double_tap"
             android:persistent="false"
