@@ -233,6 +233,15 @@
                 android:icon="@drawable/ic_settings_development"
                 />
 
+        <!-- Yuga Settings -->
+        <dashboard-tile
+            android:id="@+id/yuga_settings"
+            android:title="@string/yuga_settings"
+            android:fragment="com.android.settings.YugaSettings"
+            android:icon="@drawable/ic_settings_yuga"
+             />
+
+
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"
